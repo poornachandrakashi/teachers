@@ -22,6 +22,13 @@ def cse():
     result = list(records)
     return render_template('cse.html',results=result)
 
+@app.route('/chem')
+def chem():
+    data=pd.read_csv('chem.csv')
+    records=data.to_records(index=False)
+    result = list(records)
+    return render_template('chem.html',results=result)
+
 @app.route('/auto')
 def auto():
     data=pd.read_csv('auto.csv')

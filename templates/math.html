@@ -11,15 +11,20 @@
     <!------ Include the above in your HEAD tag ---------->
 </head>
 
-<body>
+<body style="background-color:#ff5e6c">
     <!-- Section: Team v.2 -->
     <section class="team-section text-center my-5">
 
         <!-- Section heading -->
-        <h2 class="h1-responsive font-weight-bold my-5">Our amazing team</h2>
+        <h2 class="h1-responsive font-weight-bold my-5">The Oxford College of Engineering</h2>
         <!-- Section description -->
-        <p class="grey-text w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
-
+        <p class="grey-text w-responsive mx-auto mb-5">Mathematics Department</p>
+        <div>
+            <img src="static/images/pics/ISE/Geetha_Rani.jpg" alt="Kanagavalli">
+            <h2>Dr.Mallikarjun</h2>
+            <h3>Head, Mathematics Department</h3>
+        </div>
+        <br>
         <!-- Grid row -->
         <div class="row text-center">
 
@@ -27,7 +32,7 @@
             {% for result in results %}
             <div class="col-md-4 mb-md-0 mb-5">
                 <div class="avatar mx-auto">
-                    <img src="static/images/pics/CSE/{{result[0]}}.jpg" class="rounded z-depth-1-half" width="250px" height="250px" alt="Sample avatar">
+                    <img src="static/images/pics/math/{{result[0]}}.jpg" class="rounded z-depth-1-half" width="250px" height="250px" alt="Sample avatar">
                 </div>
                 <h4 class="font-weight-bold dark-grey-text my-4">{{result[0]}}</h4>
                 <h6 class="text-uppercase grey-text mb-3"><strong>{{result[6]}}</strong></h6>

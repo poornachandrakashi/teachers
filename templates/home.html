@@ -31,9 +31,290 @@
             text-align: center;
         }
         
-        h1 {
+        h1,
+        h2 {
             font-family: 'Balsamiq Sans', cursive;
             text-align: center;
+        }
+        
+        @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
+        /*
+.fonts {
+  font-family: 'Josefin Slab', serif;
+}
+*/
+        
+        body {
+            font-family: 'Josefin Slab', serif;
+            font-size: 20px;
+            line-height: 24px;
+            color: #333;
+            background: #ececec;
+            overflow-y: scroll;
+        }
+        
+        p {
+            margin-bottom: 0.5em;
+        }
+        
+        a,
+        a:visited {
+            text-decoration: none;
+            color: #00AE68;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .pageTitle {
+            font-size: 2em;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1em;
+            color: #00AE68;
+        }
+        
+        .pageSubTitle {
+            margin-bottom: 0.5em;
+            font-size: 1.3em;
+            font-weight: 700;
+            line-height: 1em;
+            color: #222;
+        }
+        
+        .articleTitle {
+            font-size: 1.15em;
+            font-weight: 700;
+            line-height: 1em;
+            color: #222;
+        }
+        
+        .wrapper {
+            width: 600px;
+            margin: 20px auto;
+        }
+        
+        .container {
+            padding-top: 1em;
+            margin-top: 1em;
+            border-top: solid 1px #CCC;
+        }
+        
+        a.button {
+            display: block;
+            position: relative;
+            float: left;
+            width: 120px;
+            padding: 0;
+            margin: 10px 20px 10px 0;
+            font-weight: 600;
+            text-align: center;
+            line-height: 50px;
+            color: #FFF;
+            border-radius: 5px;
+            transition: all 0.2s;
+        }
+        
+        .btnBlueGreen {
+            background: #00AE68;
+        }
+        
+        .btnLightBlue {
+            background: #5DC8CD;
+        }
+        
+        .btnOrange {
+            background: #FFAA40;
+        }
+        
+        .btnPurple {
+            background: #A74982;
+        }
+        /* FADE */
+        
+        .btnFade.btnBlueGreen:hover {
+            background: #21825B;
+        }
+        
+        .btnFade.btnLightBlue:hover {
+            background: #01939A;
+        }
+        
+        .btnFade.btnOrange:hover {
+            background: #FF8E00;
+        }
+        
+        .btnFade.btnPurple:hover {
+            background: #6D184B;
+        }
+        /* 3D */
+        
+        .btnBlueGreen.btnPush {
+            box-shadow: 0px 5px 0px 0px #007144;
+        }
+        
+        .btnLightBlue.btnPush {
+            box-shadow: 0px 5px 0px 0px #1E8185;
+        }
+        
+        .btnOrange.btnPush {
+            box-shadow: 0px 5px 0px 0px #A66615;
+        }
+        
+        .btnPurple.btnPush {
+            box-shadow: 0px 5px 0px 0px #6D184B;
+        }
+        
+        .btnPush:hover {
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        
+        .btnBlueGreen.btnPush:hover {
+            box-shadow: 0px 0px 0px 0px #007144;
+        }
+        
+        .btnLightBlue.btnPush:hover {
+            box-shadow: 0px 0px 0px 0px #1E8185;
+        }
+        
+        .btnOrange.btnPush:hover {
+            box-shadow: 0px 0px 0px 0px #A66615;
+        }
+        
+        .btnPurple.btnPush:hover {
+            box-shadow: 0px 0px 0px 0px #6D184B;
+        }
+        /* BORDER */
+        
+        .btnBlueGreen.btnBorder {
+            box-shadow: 0px 0px 0px 0px #21825B;
+        }
+        
+        .btnBlueGreen.btnBorder:hover {
+            box-shadow: 0px 0px 0px 5px #21825B;
+        }
+        
+        .btnLightBlue.btnBorder {
+            box-shadow: 0px 0px 0px 0px #01939A;
+        }
+        
+        .btnLightBlue.btnBorder:hover {
+            box-shadow: 0px 0px 0px 5px #01939A;
+        }
+        
+        .btnOrange.btnBorder {
+            box-shadow: 0px 0px 0px 0px #A66615;
+        }
+        
+        .btnOrange.btnBorder:hover {
+            box-shadow: 0px 0px 0px 5px #A66615;
+        }
+        
+        .btnPurple.btnBorder {
+            box-shadow: 0px 0px 0px 0px #6D184B;
+        }
+        
+        .btnPurple.btnBorder:hover {
+            box-shadow: 0px 0px 0px 5px #6D184B;
+        }
+        /* FLOAT */
+        
+        .btnFloat {
+            background: none;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+        }
+        
+        .btnFloat:before {
+            content: 'Float';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 120px;
+            height: 50px;
+            border-radius: 5px;
+            transition: all 0.2s;
+        }
+        
+        .btnBlueGreen.btnFloat:before {
+            background: #00AE68;
+        }
+        
+        .btnLightBlue.btnFloat:before {
+            background: #5DC8CD;
+        }
+        
+        .btnOrange.btnFloat:before {
+            background: #FFAA40;
+        }
+        
+        .btnPurple.btnFloat:before {
+            background: #8D336A;
+        }
+        
+        .btnFloat:before {
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+        }
+        
+        .btnFloat:hover:before {}
+        
+        .btnFloat:hover:before {
+            margin-top: -2px;
+            margin-left: 0px;
+            transform: scale(1.1, 1.1);
+            -ms-transform: scale(1.1, 1.1);
+            -webkit-transform: scale(1.1, 1.1);
+            box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+        }
+        /* SLIDE */
+        
+        .btnSlide.btnBlueGreen {
+            background: 0;
+        }
+        
+        .btnSlide .top {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 120px;
+            height: 50px;
+            background: #00AE68;
+            z-index: 10;
+            transition: all 0.2s;
+            border-radius: 5px;
+        }
+        
+        .btnSlide.btnBlueGreen .top {
+            background: #00AE68;
+        }
+        
+        .btnSlide.btnLightBlue .top {
+            background: #5DC8CD;
+        }
+        
+        .btnSlide.btnOrange .top {
+            background: #FFAA40;
+        }
+        
+        .btnSlide.btnPurple .top {
+            background: #A74982;
+        }
+        
+        .btnSlide .bottom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 120px;
+            height: 50px;
+            color: #000;
+            z-index: 5;
+            border-radius: 5px;
+        }
+        
+        .btnSlide:hover .top {
+            top: 40px;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
@@ -41,107 +322,72 @@
 
 <body style="background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);">
     <img src="https://lh3.googleusercontent.com/proxy/Pv3Ef8W0MexGRn-zAaDAXRZ-ka4pBr9hamI5wLPXvSdxecEaxYqZlbdsXeaQyQxJX8dJ8MzzYI7v6pI3uaxUoIIsSDat7A" width="200px" alt="">
+    <h1>DEVELOPER STUDENT CLUBS</h1>
     <h1>The Oxford College of Engineering</h1>
-    <ul class="breadcrumb" style="text-align: center;">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">CSe</a></li>
-        <li><a href="#">ISe</a></li>
-        <li><a href="#">ISe</a></li>
-        <li><a href="#">ISe</a></li>
-        <li><a href="#">ISe</a></li>
-        <li><a href="#">ISe</a></li>
-        <li><a href="#">ISe</a></li>
-        <li><a href="#">ISe</a></li>
-        <li><a href="#">ISe</a></li>
-        <li class="active">Vacation</li>
-    </ul>
     <div id="wrapper">
         <div id="container">
 
             <section class="open-book">
                 <header>
-                    <h1>Book Layout</h1>
-                    <h6>Erin E. Sullivan</h6>
+                    <h1>DEVELOPER STUDENT CLUBS</h1>
+                    <h6>Namaste</h6>
                 </header>
                 <article>
-                    <h2 class="chapter-title">Waiting on projects</h2>
+                    <h2 class="chapter-title">HAPPY TEACHER'S DAY</h2>
+                    <p>ಗುರು ಬ್ರಹ್ಮ ಗುರು ವಿಷ್ಣು ಗುರು ದೇವೋ ಮಹೇಶ್ವರ ಗುರು ಸಾಕ್ಷಾತ್ ಪರಬ್ರಹ್ಮ ತಸ್ಮೈ ಶ್ರೀ ಗುರವೇ ನಮಃ</p>
+                    <br>
                     <p>
-                        Sublime Text 2 was opened and a new document was created. "I love this time of year," Erin gleefully thought to herself.
-                    </p>
-                    <p>
-                        The "time of year" that is being referenced relates to Erin's job when the pile of projects temporarily slow down. This doesn't happen to just her. The reduction of work happens to many, but at various times throughout the year, depending on their position.
-                        She could submit to boredom and brainlessly surf the Internet, but this particular developer decided to take advantage of the situation.
-                    </p>
-                    <p>
-                        Erin brainstorms on ideas that are both fun and can strengthen her development skills. After all, however she spends her free time at work should be used in a way that becomes helpful for future projects.
-                    </p>
-                    <p>
-                        She already made quite the effort into fine-tuning her skills with Flexbox, creating functional and accessible code for an <a href="https://codepen.io/erinesullivan/pen/LLoXoL">organizational chart</a> and a <a href="https://codepen.io/erinesullivan/pen/MvOdOE">process chart</a>.
-                        For Erin's next personal project, she wanted something different. Something with multiple (yet possibly useful) features.
-                    </p>
-                    <p>
-                        To <a href="https://codepen.io/">CodePen.io</a> she went, but not brainlessly! Erin "Oohed" and "Ahhed" at the recently picked pens. She envied the skills of those using compilers she has yet to dabble in. Then she put together
-                        a list of what she would like to achieve.
-                    </p>
-                    <p>
-                        Erin chuckled to herself, "This sounds crazy, but what if I develop a section of text that looks like a book?"
-                    </p>
-                    <p>
-                        She paused, realizing that what she was about to do was a trend years ago. This severely increased the chance of her project being mocked after launch. What was the specific trend Erin remembered? Skeuomorphism.
-                    </p>
-                    <dl>
-                        <dt><strong>skeu&bull;o&bull;morph</strong></dt>
-                        <dd>
-                            <em>noun</em><br> an object or feature that imitates the design of a similar artifact made from another material.
-                        </dd>
-                    </dl>
-                    <p>
-                        Outside of skeuomorphism, the idea actually was not very silly. Erin always had an appreciation towards print work. The thought of mimicking similar designs onto a web interface has always fascinated her. So, why not start with the classic print design
-                        of a novel?
-                    </p>
-                    <p>
-                        She began to jot down a list of elements that are typically in a novel:
+                        A teacher is a person who helps students to acquire knowledge, competence or virtue. Informally the role of teacher may be taken on by anyone.
                     </p>
                     <ul>
-                        <li>Serif typefaces</li>
+                        <li><u> View about our teachers</u></li>
                         <li>
-                            Header area with the title of the book on the left, and the author of said book on the right. <em>Erin is aware that content within the header of the same page as a chapter title does not appear, but she made an exception</em>.
+                            “It is the supreme art of the teacher to awaken joy in creative expression and knowledge.” <em> Albert Einstein</em>.
                         </li>
-                        <li>An adorned chapter title</li>
-                        <li>A dropcap for the first letter of the first paragraph of the chapter</li>
-                        <li>Indented paragraphs</li>
-                        <li>Page numbers</li>
+                        <li> "If a country is to be corruption free and become a nation of beautiful minds, I strongly feel there are three key societal members who can make a difference. They are the father, the mother, and the teacher." <em>Dr. APJ Abdul Kalam.</em></li>
+                        <li> “A good teacher is like a candle – it consumes itself to light the way for others.”</li>
+                        <li>The teacher who is indeed wise does not bid you to enter the house of his wisdom but rather leads you to the threshold of your mind</li>
                     </ul>
+                    <br>
                     <p>
-                        She was then picturing herself making marks on a novel like she used to in school. In her true fashion, she got carried away with "What ifs."
+                        ಸರಸ್ವತಿ ನಮಸ್ತುಭ್ಯಂ ವರದೇ ಕಾಮರೂಪಿಣಿ | ವಿದ್ಯಾರಂಭಂ ಕರಿಷ್ಯಾಮಿ ಸಿದ್ಧಿರ್ಭವತು ಮೇ ಸದಾ || 5 ||
                     </p>
-                    <ul>
-                        <li>
-                            "What if highlighting the text actually looked <mark>like a highlighter</mark>?"
-                            <ul>
-                                <li>"What if I wanted it to be <mark class="pink">pink</mark>?"</li>
-                                <li>"<mark class="blue">Blue</mark>?"</li>
-                                <li>"<mark class="green">Green</mark>?"</li>
-                                <li>"<mark class="orange">Orange</mark>?"</li>
-                            </ul>
-                        </li>
-                        <li>"What if I found <s>a typo</s><sup>an error in the content</sup> and wanted to make a correction?"</li>
-                        <li>"What if I was viewing this on mobile&mdash;"</li>
-                    </ul>
+                    <br>
                     <p>
-                        The true obstacle showed its form. Responsiveness. How on Earth will she make this work?
+                        Find your best teachers!!!!
                     </p>
-                    <p>
-                        Erin pulled out her notepad and started sketching. First she began to illustrate the wireframe of the book in its entirety. Then she recorded some notes on how each element would break down as the screen size got smaller. After several minutes, the blueprint
-                        was complete. She came to the conclusion that mobile viewing must stay minimal. The pages go away, which makes the page numbers no longer have a function so they must go away, and if those go away then there is no need for a cover
-                        since it is used to help hold and protect pages.
-                    </p>
-                    <p>
-                        She looks back at the blinking cursor of her blank canvas in Sublime Text 2. Doubt begins to linger in the back of her mind with the thought of her new code never being used and her time spent ends up being a waste. Her fingers were typing anyway.
-                    </p>
-                    <p>
-                        Erin smirked, "Well at least I think it's worth a try."
-                    </p>
+                    <h3>Computer Science</h3>
+                    <a href="/cse"><button type="button" class="btn btn-primary">Computer Science and Engineering</button></a>
+                    <br>
+                    <h3>Information Science</h3>
+                    <a href="/ise"><button type="button" class="btn btn-primary">Information Science and Engineering</button></a>
+                    <br>
+                    <h3>Automobile Engineering</h3>
+                    <a href="/auto"><button type="button" class="btn btn-primary">Automobile Engineering</button></a>
+                    <br>
+                    <h3>Biotechnology Engineering</h3>
+                    <a href="/bt"><button type="button" class="btn btn-primary">Biotechnology Engineering</button></a>
+                    <br>
+                    <h3>Civil Engineering</h3>
+                    <a href="/civil"><button type="button" class="btn btn-primary">Civil Engineering</button></a>
+                    <br>
+                    <h3>Electrical and Electronics Engineering</h3>
+                    <a href="/eee"><button type="button" class="btn btn-primary">EEE Engineering</button></a>
+                    <br>
+                    <h3>Chemistry Department</h3>
+                    <a href="/chem"><button type="button" class="btn btn-primary">Chemistry Engineering</button></a>
+                    <br>
+                    <h3>Physics Department</h3>
+                    <a href="/physics"><button type="button" class="btn btn-primary">Physics Engineering</button></a>
+                    <br>
+                    <h3>Mechanical Engineering</h3>
+                    <a href="/mech"><button type="button" class="btn btn-primary">Mechanical Engineering</button></a>
+                    <br>
+                    <h3>Sports </h3>
+                    <a href="/sports"><button type="button" class="btn btn-primary">Sports</button></a>
+                    <br>
+                    <h3>English And Soft skills Engineering</h3>
+                    <a href="/soft"><button type="button" class="btn btn-primary">English And Soft Skills</button></a>
                 </article>
                 <footer>
                     <ol id="page-numbers">
